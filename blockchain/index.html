@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>block chain explained</title>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+<script type="text/javascript" src="js/hashes.min.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper">
+
+      <div class="intro">
+    <h1>Blockchain defined</h1>
+
+    <p>First of all  it’s important to note that blockchain itself isn’t a device, a machine or a cryptocurrency even. It is a system, a method to keep track of information. 
+      The recording of information takes place in a way that makes it impossible to change, hack or cheat the system. 
+      Therefore it works well for financial systems like Bitcoin.
+      However it can be used for many more subjects.
+
+    </p>
+  </div>
+
+<div class="build">
+
+    <div class="form">
+      <h1>Let's build a chain!</h1>
+      <p>As said a blockchain is a system to keep track of blocks of information. Now let’s take the principle of packing your backpack when you are going on holiday. You take one item per time and put it into your suitcase in a certain order.</p>
+      <p class="question">What do you want to bring on holiday?</p>
+
+      <div class="formGroup">
+      <input type="text" class="formInput" id="searchWord" placeholder="Item to bring" required="" />
+
+      <a id="add" class="button">Add item</a>
+      </div>
+
+      <p>Every time you add put an item in your suitcase a “transaction” is made. An algorithm calculates a specific number, a hash, based on the item you added to the chain. This number is later used to validate the chain.</p>
+    </div>
+
+    <div class="img">
+      <img id="koffer" src="assets/koffer.png">
+    </div>
+
+    
+  </div>
+
+<div class="chain">
+  <div class="block" id="1"></div>
+  <div class="block" id="2"></div>
+  <div class="block" id="3"></div>
+  <div class="block" id="4"></div>
+  <div class="block" id="5"></div>
+</div>
+
+<div class="status">
+<h3 class="statusText"> STATUS _CHAIN <span id="status">⚪</span> </br>🔗 <span id="amount">0</span> blocks</h3>
+
+</div>
+
+
+<div class="alter">
+  <h1>Can we “break” the chain?
+  </h1>
+
+  <div class="interactiveAlter">
+
+  <div class="changeItem">
+    <p>Let’s see what happens when you change the 3’rd item in the chain.
+    </p>
+    <div class="formGroupAlter">
+      <input type="text" class="formInputAlter" id="changeWord" placeholder="Item to bring" required="" />
+      <a id="change" class="button">Change item</a>
+    </div>
+    <p>As you can see now that chain is not valid anymore. This is because the number calculated for item 3 when we first put information in the chain changed. This is called the proof of work priciple.
+      Because of this principle it is really difficult if not impossible to “hack” a blockchain. </p>
+
+  </div>
+
+  </div>
+<div class="explaination">
+  <p>Now that you have build you first blockchain by adding items to a suitcase you can start to imagine what more applications this system might have…</p>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>© Ilse Pouwels</p>
+</div>
+
+</div>
+
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
